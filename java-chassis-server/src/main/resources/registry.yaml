@@ -1,0 +1,9 @@
+java-chassis-provider:
+- id: "100"
+  version: "0.0.1"
+  appid: performance-compare
+  schemaIds:
+  - javachassis
+  instances:
+  - endpoints:
+    - rest://localhost:18081

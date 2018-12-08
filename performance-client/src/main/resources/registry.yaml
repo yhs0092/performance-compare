@@ -1,0 +1,9 @@
+client:
+- id: "100"
+  version: "0.0.1"
+  appid: performance-compare
+  schemaIds:
+  - client
+  instances:
+  - endpoints:
+    - rest://localhost:18080
