@@ -12,6 +12,7 @@
     <module>java-chassis-server</module>
     <module>performance-client</module>
     <module>spring-boot-1.5-server</module>
+    <module>spring-boot-2-server</module>
   </modules>
 
   <properties>
