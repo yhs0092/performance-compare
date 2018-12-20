@@ -22,6 +22,8 @@ servicecomb:
     client:
       thread-count: 2
       connection.maxPoolSize: 50
+    server:
+      thread-count: 1 # one server net thread is enough for test client
   #  accesslog:
   #    enabled: true
   metrics:
@@ -36,3 +38,7 @@ servicecomb:
         default: ""
       Consumer:
         default: simpleLB
+
+  executor:
+    default:
+      thread-per-group: 1  # one biz thread is enough for test client
