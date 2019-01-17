@@ -47,10 +47,10 @@ public class StatusManager {
 
   private void invokeServer(Holder<Boolean> workerFlag) {
     server.reflect(currentStatus.getRequestBody()).whenComplete((s, throwable) -> {
-      if (workerFlag.value && null == throwable) {
+      if (workerFlag.value ) {
         invokeServer(workerFlag);
-      } else if (null != throwable) {
-        throwable.printStackTrace();
+//      } else if (null != throwable) {
+//        throwable.printStackTrace();
       } else {
         LOGGER.info("worker stop, flag: {}", workerFlag.hashCode());
       }

@@ -12,6 +12,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class JavaChassisService {
   @PostMapping(path = "/reflect")
   public String reflect(@RequestBody String body) {
+    try {
+      Thread.sleep(2000);
+    } catch (InterruptedException e) {
+      e.printStackTrace();
+    }
     return body;
   }
 }

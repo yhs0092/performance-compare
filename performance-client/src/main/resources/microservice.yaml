@@ -20,17 +20,19 @@ servicecomb:
   rest:
     address: 0.0.0.0:18080
     client:
-      thread-count: 2
-      connection.maxPoolSize: 50
+      thread-count: 1
+      connection.maxPoolSize: 5
     server:
       thread-count: 1 # one server net thread is enough for test client
   #  accesslog:
   #    enabled: true
   metrics:
-    window_time: 2000
+    window_time: 10000
     publisher:
       defaultLog:
         enabled: true
+  request:
+    timeout: 1000
 
   handler:
     chain:

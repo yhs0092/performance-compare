@@ -26,11 +26,11 @@ servicecomb:
     akskCustomCipher: default
   #  accesslog:
   #    enabled: true
-  #  metrics:
-  #    window_time: 1000
-  #    publisher:
-  #      defaultLog:
-  #        enabled: true
+  metrics:
+    window_time: 10000
+    publisher:
+      defaultLog:
+        enabled: true
 
   handler:
     chain:
